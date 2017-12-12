@@ -11,11 +11,11 @@ to setup a new rig:
 - download amd drivers for ubuntu (17.40)
 - untar amdgpu
 - add user to video group
-- ´./amdgpu-pro-install -y´
-- add ´amdgpu.vm\_fragment\_size=9´ arg to **GRUB\_CMDLINE\_LINUX\_DEFAULT** in */etc/default/grub*
+- `./amdgpu-pro-install -y`
+- add `amdgpu.vm\_fragment\_size=9` arg to **GRUB\_CMDLINE\_LINUX\_DEFAULT** in */etc/default/grub*
 - reboot
 
-´´´bash
+```bash
 sudo apt-get update
 sudo apt-get dist-upgrade
 sudo apt-get install libcurl3 unzip
@@ -31,4 +31,4 @@ sudo ./amdgpu-pro-install -y
 sudo usermod -a -G video nature
 sudo vim /etc/default/grub # And add module arg
 sudo reboot
-´´´
+```
