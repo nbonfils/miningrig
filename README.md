@@ -32,3 +32,6 @@ sudo usermod -a -G video nature
 sudo vim /etc/default/grub # And add module arg
 sudo reboot
 ```
+
+## Multi GPU (5+)
+[http://ethosdistro.com/kb/#many-gpus]
